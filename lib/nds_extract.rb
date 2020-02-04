@@ -8,14 +8,15 @@ def directors_totals(nds)
   #
   #
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
-  grand_total = 0 
   row_index = 0 
   result = {}
   while row_index < nds.length do
+    grand_total = 0 
     column_index = 0 
     while column_index < nds[row_index].length do
       grand_total += nds[row_index][:movies][column_index][:worldwide_gross]
-      result nds[row_index][:name] = "#{grand_total}"
+      name = nds[row_index][:name]
+      result  = "#{grand_total}"
       column_index += 1 
     end
    row_index += 1
