@@ -16,7 +16,6 @@ def directors_totals(nds)
     puts nds[row_index].length
     while column_index < nds[row_index].length do
       grand_total += nds[row_index][:movies][column_index][:worldwide_gross]
-      pp grand_total
       column_index += 1 
     end
     result[nds[row_index][:name]] = "#{grand_total}"
