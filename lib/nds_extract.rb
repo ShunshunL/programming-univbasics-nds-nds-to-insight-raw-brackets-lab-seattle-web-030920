@@ -13,6 +13,7 @@ def directors_totals(nds)
   while row_index < nds.length do
     grand_total = 0
     column_index = 0 
+    puts nds[row_index].length
     while column_index < nds[row_index].length do
       grand_total += nds[row_index][:movies][column_index][:worldwide_gross]
       pp grand_total
