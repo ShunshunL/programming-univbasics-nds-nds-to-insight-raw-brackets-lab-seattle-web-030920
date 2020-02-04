@@ -18,7 +18,7 @@ def directors_totals(nds)
       pp grand_total
       column_index += 1 
     end
-   result[nds[row_index][:name]] = "#{grand_total}"
+    result[nds[row_index][:name]] = "#{grand_total}"
    row_index += 1
   end
   #
